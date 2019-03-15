@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SyxzDemos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_mail">邮箱</string>
+    <string name="title_music">音乐</string>
+    <string name="title_video">视频</string>
+    <string name="title_activity_nav">NavActivity</string>
+</resources>

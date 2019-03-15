@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.network.NetworkMainActivity">
+
+
+    <Button
+        android:id="@+id/btnRxjavaRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rxjava2+Retrofit"
+        app:layout_constraintStart_toStartOf="@+id/btnMonitorNetworkState"
+        app:layout_constraintTop_toBottomOf="@+id/btnMonitorNetworkState" />
+
+    <Button
+        android:id="@+id/btnMonitorNetworkState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="网络状态监听"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGsonOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Gson相关"
+        app:layout_constraintStart_toStartOf="@+id/btnMonitorNetworkState"
+        app:layout_constraintTop_toBottomOf="@+id/btnRxjavaRetrofit" />
+
+</android.support.constraint.ConstraintLayout>

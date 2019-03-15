@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+    <Button
+        android:id="@+id/btnSetBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="app角标"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnActivityStack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="测试Activity栈"
+        app:layout_constraintStart_toStartOf="@+id/btnSetBadge"
+        app:layout_constraintTop_toBottomOf="@+id/btnSetBadge" />
+
+    <Button
+        android:id="@+id/btnRv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="RecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/btnActivityStack"
+        app:layout_constraintTop_toBottomOf="@+id/btnActivityStack" />
+
+    <Button
+        android:id="@+id/btnNetwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="网络相关"
+        app:layout_constraintStart_toStartOf="@+id/btnRv"
+        app:layout_constraintTop_toBottomOf="@+id/btnRv" />
+
+    <Button
+        android:id="@+id/btnSchduleJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="任务调度先关"
+        app:layout_constraintStart_toStartOf="@+id/btnNetwork"
+        app:layout_constraintTop_toBottomOf="@+id/btnScrollview" />
+
+
+
+    <Button
+        android:id="@+id/btnSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="引导页"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNetwork" />
+
+    <Button
+        android:id="@+id/btnAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:text="动画"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSetBadge"
+        app:layout_constraintStart_toEndOf="@+id/btnSetBadge"
+        app:layout_constraintTop_toTopOf="@+id/btnSetBadge" />
+
+    <Button
+        android:id="@+id/btnClip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Clicp属性作用演示"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/btnNetwork"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimation" />
+
+    <Button
+        android:id="@+id/btnClipChildren"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ClipChildren属性"
+        app:layout_constraintEnd_toEndOf="@+id/btnClip"
+        app:layout_constraintStart_toStartOf="@+id/btnClip"
+        app:layout_constraintTop_toBottomOf="@+id/btnClip" />
+
+    <Button
+        android:id="@+id/btnWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:text="Statusbar Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/btnSchduleJob"
+        app:layout_constraintTop_toBottomOf="@+id/btnClipChildren" />
+
+    <Button
+        android:id="@+id/btnScrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="滑动相关"
+        app:layout_constraintStart_toStartOf="@+id/btnSplash"
+        app:layout_constraintTop_toBottomOf="@+id/btnSplash" />
+
+    <Button
+        android:id="@+id/btnDragDrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="View拖拽"
+        app:layout_constraintStart_toStartOf="@+id/btnSchduleJob"
+        app:layout_constraintTop_toBottomOf="@+id/btnSchduleJob" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.network.NewTypeMonitorNetworkActivity">
+
+    <Button
+        android:id="@+id/btnStartMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始监听网络"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/btnStopMonitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="停止经停网络"
+        app:layout_constraintStart_toStartOf="@+id/btnStartMonitor"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartMonitor" />
+
+    <Button
+        android:id="@+id/btnMonitorSingleNetworkRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="单个RequestNetwork的网络状态监听"
+        app:layout_constraintStart_toStartOf="@+id/btnStopMonitor"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopMonitor" />
+
+    <Button
+        android:id="@+id/btnScanWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="开始扫描wifi"
+        app:layout_constraintStart_toStartOf="@+id/btnMonitorSingleNetworkRequest"
+        app:layout_constraintTop_toBottomOf="@+id/btnMonitorSingleNetworkRequest" />
+</android.support.constraint.ConstraintLayout>

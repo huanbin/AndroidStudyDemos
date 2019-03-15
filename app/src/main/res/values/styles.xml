@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!--自定义BottomNavigationView样式-->
+    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">#0088ff</item>
+        <item name="itemTextColor">#00ffff</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/MyBottomNavigationViewTextAppearanceActive</item>
+        <item name="itemTextAppearanceInactive">@style/MyBottomNavigationViewTextAppearanceInactive</item>
+    </style>
+
+    <style name="MyBottomNavigationViewTextAppearanceActive">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyBottomNavigationViewTextAppearanceInactive">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
