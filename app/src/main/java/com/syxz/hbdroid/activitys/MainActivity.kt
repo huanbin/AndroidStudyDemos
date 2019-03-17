@@ -12,6 +12,7 @@ import com.syxz.hbdroid.activitys.clip.RecyclerViewClipActivity
 import com.syxz.hbdroid.activitys.network.NetworkMainActivity
 import com.syxz.hbdroid.activitys.recyclerview.RecyclerviewMainActivity
 import com.syxz.hbdroid.activitys.statusbar.StatusbarActivity
+import com.syxz.hbdroid.activitys.viewpager.PageTransformActivity
 import com.syxz.hbdroid.activitys.viewpager.splash.SplashActivity
 import com.syxz.hbdroid.activitys.views.draganddrop.DragViewActivity
 import com.syxz.hbdroid.activitys.views.scroller.ScrollerUsageActivity
@@ -68,6 +69,10 @@ class MainActivity : BaseActivity() {
 
         btnDragDrop.setOnClickListener {
             ActivityUtils.start(this, DragViewActivity::class.java)
+        }
+
+        btnPageTransform.setOnClickListener {
+            ActivityUtils.start(this, PageTransformActivity::class.java)
         }
     }
 }
