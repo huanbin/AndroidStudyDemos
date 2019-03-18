@@ -121,12 +121,12 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSplash" />
 
     <Button
-        android:id="@+id/btnDragDrop"
+        android:id="@+id/btnCustomViews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="View拖拽"
+        android:text="自定义View"
         app:layout_constraintStart_toStartOf="@+id/btnSchduleJob"
         app:layout_constraintTop_toBottomOf="@+id/btnSchduleJob" />
 

@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.syxz.hbdroid.R
 import kotlinx.android.synthetic.main.activity_scroller_usage.*
 
-class ScrollerUsageActivity : AppCompatActivity() {
+class Scroller1Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

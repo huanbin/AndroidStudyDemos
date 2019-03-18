@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".activitys.views.CustomViewMainActivity">
 
+    <Button
+        android:id="@+id/btnScroller1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scroller1"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <Button
+        android:id="@+id/btnDragDrop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="DragDropView1"
+        app:layout_constraintStart_toStartOf="@+id/btnScroller1"
+        app:layout_constraintTop_toBottomOf="@+id/btnScroller1" />
 </android.support.constraint.ConstraintLayout>

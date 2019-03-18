@@ -45,13 +45,14 @@
         <activity android:name=".activitys.clip.RecyclerViewClipActivity" />
         <activity android:name=".activitys.clip.ClipChildrenActivity" />
         <activity android:name=".activitys.statusbar.StatusbarActivity" />
-        <activity android:name=".activitys.views.scroller.ScrollerUsageActivity" />
+        <activity android:name=".activitys.views.scroller.Scroller1Activity" />
         <activity android:name=".activitys.recyclerview.BasicRecyclerView1Activity" />
         <activity android:name=".activitys.recyclerview.ItemDecorationRvActivity" />
         <activity android:name=".activitys.network.gson.GsonDemoActivity" />
         <activity android:name=".activitys.network.NetworkMainActivity" />
-        <activity android:name=".activitys.views.draganddrop.DragViewActivity" />
-        <activity android:name=".activitys.viewpager.PageTransformActivity"></activity>
+        <activity android:name=".activitys.views.draganddrop.DragView1Activity" />
+        <activity android:name=".activitys.viewpager.PageTransformActivity" />
+        <activity android:name=".activitys.views.CustomViewMainActivity"></activity>
     </application>
 
 </manifest>

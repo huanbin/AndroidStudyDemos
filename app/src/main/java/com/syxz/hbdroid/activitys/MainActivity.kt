@@ -5,8 +5,6 @@ import com.syxz.hbdroid.R
 import com.syxz.hbdroid.activitys.activitystack.TwoActivity
 import com.syxz.hbdroid.activitys.animation.AnimationActivity1
 import com.syxz.hbdroid.activitys.backgroundtask.JobScheduleActivity
-import com.syxz.hbdroid.activitys.network.NewTypeMonitorNetworkActivity
-import com.syxz.hbdroid.activitys.network.rxjava.Rxjava2RetrofitActivity
 import com.syxz.hbdroid.activitys.clip.ClipChildrenActivity
 import com.syxz.hbdroid.activitys.clip.RecyclerViewClipActivity
 import com.syxz.hbdroid.activitys.network.NetworkMainActivity
@@ -14,8 +12,8 @@ import com.syxz.hbdroid.activitys.recyclerview.RecyclerviewMainActivity
 import com.syxz.hbdroid.activitys.statusbar.StatusbarActivity
 import com.syxz.hbdroid.activitys.viewpager.PageTransformActivity
 import com.syxz.hbdroid.activitys.viewpager.splash.SplashActivity
-import com.syxz.hbdroid.activitys.views.draganddrop.DragViewActivity
-import com.syxz.hbdroid.activitys.views.scroller.ScrollerUsageActivity
+import com.syxz.hbdroid.activitys.views.CustomViewMainActivity
+import com.syxz.hbdroid.activitys.views.scroller.Scroller1Activity
 import com.syxz.hbdroid.base.BaseActivity
 import com.syxz.hbdroid.utils.ActivityUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -64,11 +62,11 @@ class MainActivity : BaseActivity() {
         }
 
         btnScrollview.setOnClickListener {
-            ActivityUtils.start(this, ScrollerUsageActivity::class.java)
+            ActivityUtils.start(this, Scroller1Activity::class.java)
         }
 
-        btnDragDrop.setOnClickListener {
-            ActivityUtils.start(this, DragViewActivity::class.java)
+        btnCustomViews.setOnClickListener {
+            ActivityUtils.start(this, CustomViewMainActivity::class.java)
         }
 
         btnPageTransform.setOnClickListener {
