@@ -1,4 +1,4 @@
-package com.szy100.szyapp.bus;
+package com.syxz.hbdroid.bus;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

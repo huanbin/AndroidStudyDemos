@@ -2,6 +2,7 @@ package com.syxz.hbdroid.activitys.views.nestedscroll
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.syxz.hbdroid.R
 
 class NestedScroll2Activity : AppCompatActivity() {
 

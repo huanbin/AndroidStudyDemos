@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="app角标"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,47 +21,39 @@
         android:id="@+id/btnActivityStack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="测试Activity栈"
-        app:layout_constraintStart_toStartOf="@+id/btnSetBadge"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSetBadge" />
 
     <Button
         android:id="@+id/btnRv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="RecyclerView"
-        app:layout_constraintStart_toStartOf="@+id/btnActivityStack"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnActivityStack" />
 
     <Button
         android:id="@+id/btnNetwork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="网络相关"
-        app:layout_constraintStart_toStartOf="@+id/btnRv"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRv" />
 
     <Button
         android:id="@+id/btnSchduleJob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="任务调度先关"
-        app:layout_constraintStart_toStartOf="@+id/btnNetwork"
-        app:layout_constraintTop_toBottomOf="@+id/btnScrollview" />
-
-
-
-    <Button
-        android:id="@+id/btnSplash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="引导页"
+        android:layout_marginTop="16dp"
+        android:text="任务调度先关"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnNetwork" />
 
@@ -69,23 +61,19 @@
         android:id="@+id/btnAnimation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
+        android:layout_marginEnd="8dp"
         android:text="动画"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSetBadge"
-        app:layout_constraintStart_toEndOf="@+id/btnSetBadge"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btnSetBadge" />
 
     <Button
         android:id="@+id/btnClip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Clicp属性作用演示"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toEndOf="@+id/btnNetwork"
         app:layout_constraintTop_toBottomOf="@+id/btnAnimation" />
 
     <Button
@@ -93,32 +81,20 @@
         android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="ClipChildren属性"
-        app:layout_constraintEnd_toEndOf="@+id/btnClip"
-        app:layout_constraintStart_toStartOf="@+id/btnClip"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnClip" />
 
     <Button
         android:id="@+id/btnWindow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Statusbar Activity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/btnSchduleJob"
         app:layout_constraintTop_toBottomOf="@+id/btnClipChildren" />
-
-    <Button
-        android:id="@+id/btnScrollview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="滑动相关"
-        app:layout_constraintStart_toStartOf="@+id/btnSplash"
-        app:layout_constraintTop_toBottomOf="@+id/btnSplash" />
 
     <Button
         android:id="@+id/btnCustomViews"
@@ -127,15 +103,28 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="自定义View"
-        app:layout_constraintStart_toStartOf="@+id/btnSchduleJob"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSchduleJob" />
 
     <Button
-        android:id="@+id/btnPageTransform"
+        android:id="@+id/btnViewPager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="ViewPager 页面切换动画"
-        app:layout_constraintStart_toStartOf="@+id/btnWindow"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ViewPager相关"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnWindow" />
+
+    <Button
+        android:id="@+id/btnImageHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="图片处理相关"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPager" />
+
+
 </android.support.constraint.ConstraintLayout>

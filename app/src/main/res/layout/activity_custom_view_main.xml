@@ -7,6 +7,14 @@
     tools:context=".activitys.views.CustomViewMainActivity">
 
     <Button
+        android:id="@+id/btnScrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滑动相关"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <Button
         android:id="@+id/btnScroller1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,4 +30,24 @@
         android:text="DragDropView1"
         app:layout_constraintStart_toStartOf="@+id/btnScroller1"
         app:layout_constraintTop_toBottomOf="@+id/btnScroller1" />
+
+    <Button
+        android:id="@+id/btnPieView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="PieView"
+        app:layout_constraintStart_toStartOf="@+id/btnDragDrop1"
+        app:layout_constraintTop_toBottomOf="@+id/btnDragDrop1" />
+
+    <Button
+        android:id="@+id/btnNestedScroll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="嵌套滚动1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPieView" />
 </android.support.constraint.ConstraintLayout>

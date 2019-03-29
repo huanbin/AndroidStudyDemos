@@ -37,4 +37,14 @@
         app:layout_constraintStart_toStartOf="@+id/btnMonitorNetworkState"
         app:layout_constraintTop_toBottomOf="@+id/btnRxjavaRetrofit" />
 
+    <Button
+        android:id="@+id/btnRxleak"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="RxBus线程泄漏"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGsonOpt" />
+
 </android.support.constraint.ConstraintLayout>

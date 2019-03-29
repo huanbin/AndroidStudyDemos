@@ -1,4 +1,4 @@
-package com.szy100.szyapp.bus;
+package com.syxz.hbdroid.bus;
 
 /**
  * 作者：JsonYang

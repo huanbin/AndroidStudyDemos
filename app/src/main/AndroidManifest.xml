@@ -52,7 +52,14 @@
         <activity android:name=".activitys.network.NetworkMainActivity" />
         <activity android:name=".activitys.views.draganddrop.DragView1Activity" />
         <activity android:name=".activitys.viewpager.PageTransformActivity" />
-        <activity android:name=".activitys.views.CustomViewMainActivity"></activity>
+        <activity android:name=".activitys.views.CustomViewMainActivity" />
+        <activity android:name=".activitys.views.pie.PieActivity" />
+        <activity android:name=".activitys.viewpager.ViewPagerMainActivity" />
+        <activity android:name=".activitys.views.nestedscroll.NestedScrollActivity1" />
+        <activity android:name=".activitys.views.nestedscroll.NestedScroll2Activity" />
+        <activity android:name=".activitys.image.ImageMainActivity" />
+        <activity android:name=".activitys.image.BitmapActivity" />
+        <activity android:name=".activitys.network.rxjava.RxBusMemoryLeakActivity"></activity>
     </application>
 
 </manifest>

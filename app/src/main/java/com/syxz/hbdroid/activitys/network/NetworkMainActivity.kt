@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.syxz.hbdroid.R
 import com.syxz.hbdroid.activitys.network.gson.GsonDemoActivity
+import com.syxz.hbdroid.activitys.network.rxjava.RxBusMemoryLeakActivity
 import com.syxz.hbdroid.activitys.network.rxjava.Rxjava2RetrofitActivity
 import com.syxz.hbdroid.utils.ActivityUtils
 import kotlinx.android.synthetic.main.activity_network_main.*
@@ -22,6 +23,10 @@ class NetworkMainActivity : AppCompatActivity() {
         }
         btnGsonOpt.setOnClickListener {
             ActivityUtils.start(this, GsonDemoActivity::class.java)
+        }
+
+        btnRxleak.setOnClickListener {
+            ActivityUtils.start(this, RxBusMemoryLeakActivity::class.java)
         }
 
 
