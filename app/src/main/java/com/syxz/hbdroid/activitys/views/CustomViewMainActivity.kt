@@ -7,6 +7,7 @@ import com.syxz.hbdroid.activitys.views.draganddrop.DragView1Activity
 import com.syxz.hbdroid.activitys.views.nestedscroll.NestedScrollActivity1
 import com.syxz.hbdroid.activitys.views.pie.PieActivity
 import com.syxz.hbdroid.activitys.views.scroller.Scroller1Activity
+import com.syxz.hbdroid.activitys.views.webview.WebViewLeakActivity
 import com.syxz.hbdroid.utils.ActivityUtils
 import kotlinx.android.synthetic.main.activity_custom_view_main.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -28,6 +29,9 @@ class CustomViewMainActivity : AppCompatActivity() {
         }
         btnNestedScroll1.setOnClickListener {
             ActivityUtils.start(this, NestedScrollActivity1::class.java)
+        }
+        btnWebView.setOnClickListener {
+            ActivityUtils.start(this, WebViewLeakActivity::class.java)
         }
     }
 }

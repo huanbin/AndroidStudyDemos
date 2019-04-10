@@ -8,6 +8,9 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!--sd卡读写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".base.BaseApplication"
@@ -39,7 +42,22 @@
         <activity android:name=".activitys.recyclerview.RecyclerviewMainActivity" />
         <activity android:name=".activitys.network.NewTypeMonitorNetworkActivity" />
         <activity android:name=".activitys.network.rxjava.Rxjava2RetrofitActivity" />
-        <activity android:name=".activitys.viewpager.splash.SplashActivity" />
+        <activity android:name=".activitys.viewpager.splash.SplashActivity">
+            <intent-filter>
+                <data
+                    android:host="com.syxz"
+                    android:mimeType="text/plain"
+                    android:path="/detail"
+                    android:port="8089"
+                    android:scheme="syxzapp" />
+
+                <action android:name="com.syxz.action.splash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 浏览器打开 -->
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activitys.animation.AnimationActivity1" />
         <activity android:name=".activitys.animation.AnimationActivity2" />
         <activity android:name=".activitys.clip.RecyclerViewClipActivity" />
@@ -59,7 +77,9 @@
         <activity android:name=".activitys.views.nestedscroll.NestedScroll2Activity" />
         <activity android:name=".activitys.image.ImageMainActivity" />
         <activity android:name=".activitys.image.BitmapActivity" />
-        <activity android:name=".activitys.network.rxjava.RxBusMemoryLeakActivity"></activity>
+        <activity android:name=".activitys.network.rxjava.RxBusMemoryLeakActivity" />
+        <activity android:name=".activitys.views.webview.WebViewLeakActivity" />
+        <activity android:name=".activitys.apk.ApkMainActivity"></activity>
     </application>
 
 </manifest>

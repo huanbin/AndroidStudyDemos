@@ -21,6 +21,11 @@ class SplashActivity : BaseActivity() {
     private lateinit var splashAdapter: SplashViewPagerAdapter
     override fun initViews(intent: Intent) {
         setContentView(R.layout.activity_splash)
+
+        var id = intent.data.getQueryParameter("id")
+        Toast.makeText(this@SplashActivity, "参数id=" + id, Toast.LENGTH_LONG).show()
+
+
         initViewPager()
         initListener()
         btnJump.visibility = View.VISIBLE
