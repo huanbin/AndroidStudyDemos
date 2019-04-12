@@ -8,6 +8,9 @@ import android.support.v4.content.FileProvider
 import android.text.TextUtils
 
 import java.io.File
+import android.app.Activity
+import java.util.jar.Manifest
+
 
 /**
  * Created by zhishi on 2017/6/27.
@@ -18,6 +21,7 @@ object ApkUtils {
     /**
      * @param context
      * @param apkPath apk文件地址
+     * app版本升级
      */
     fun install(context: Context, apkPath: String) {
         val intent = Intent(Intent.ACTION_VIEW)
@@ -35,6 +39,16 @@ object ApkUtils {
         context.startActivity(intent)
         //如果没有android.os.Process.killProcess(android.os.Process.myPid());最后不会提示完成、打开。
         android.os.Process.killProcess(android.os.Process.myPid())
+    }
+
+    /**
+     * 安装第三方app
+     */
+    fun installOtherApp(context: Activity, apkUri: Uri) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.setDataAndType(apkUri, "application/vnd.android.package-archive")
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        context.startActivityForResult(intent, Constant.REQUEST_INSTALL_PACKAGE)
     }
 
     fun getApkFileNameByVersion(apkVersion: String): String {

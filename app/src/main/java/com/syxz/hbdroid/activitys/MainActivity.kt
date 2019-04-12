@@ -4,6 +4,7 @@ import android.content.Intent
 import com.syxz.hbdroid.R
 import com.syxz.hbdroid.activitys.activitystack.TwoActivity
 import com.syxz.hbdroid.activitys.animation.AnimationActivity1
+import com.syxz.hbdroid.activitys.apk.ApkMainActivity
 import com.syxz.hbdroid.activitys.backgroundtask.JobScheduleActivity
 import com.syxz.hbdroid.activitys.image.ImageMainActivity
 import com.syxz.hbdroid.activitys.clip.ClipChildrenActivity
@@ -66,6 +67,10 @@ class MainActivity : BaseActivity() {
 
         btnImageHandle.setOnClickListener {
             ActivityUtils.start(this, ImageMainActivity::class.java)
+        }
+
+        btnApk.setOnClickListener {
+            ActivityUtils.start(this, ApkMainActivity::class.java)
         }
     }
 }

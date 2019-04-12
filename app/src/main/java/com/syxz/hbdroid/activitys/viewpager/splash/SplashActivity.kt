@@ -22,9 +22,8 @@ class SplashActivity : BaseActivity() {
     override fun initViews(intent: Intent) {
         setContentView(R.layout.activity_splash)
 
-        var id = intent.data.getQueryParameter("id")
-        Toast.makeText(this@SplashActivity, "参数id=" + id, Toast.LENGTH_LONG).show()
-
+        var id = intent.data?.getQueryParameter("id") ?: 0
+        Toast.makeText(this@SplashActivity, "参数id=$id", Toast.LENGTH_LONG).show()
 
         initViewPager()
         initListener()
