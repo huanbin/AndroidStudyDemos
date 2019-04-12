@@ -1,4 +1,4 @@
-package com.syxz.hbdroid.activitys.image
+package com.syxz.hbdroid.activitys.image.bitmap
 
 import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity

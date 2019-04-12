@@ -32,5 +32,8 @@ class ViewMainActivity : AppCompatActivity() {
         btnWebView.setOnClickListener {
             ActivityUtils.start(this, WebViewLeakActivity::class.java)
         }
+        btnShadow.setOnClickListener {
+            ActivityUtils.start(this, CutomShadowActivity::class.java)
+        }
     }
 }
