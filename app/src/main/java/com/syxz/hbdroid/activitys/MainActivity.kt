@@ -13,7 +13,7 @@ import com.syxz.hbdroid.activitys.network.NetworkMainActivity
 import com.syxz.hbdroid.activitys.recyclerview.RecyclerviewMainActivity
 import com.syxz.hbdroid.activitys.statusbar.StatusbarActivity
 import com.syxz.hbdroid.activitys.viewpager.ViewPagerMainActivity
-import com.syxz.hbdroid.activitys.views.CustomViewMainActivity
+import com.syxz.hbdroid.activitys.views.ViewMainActivity
 import com.syxz.hbdroid.base.BaseActivity
 import com.syxz.hbdroid.utils.ActivityUtils
 import kotlinx.android.synthetic.main.activity_main.*
@@ -58,7 +58,7 @@ class MainActivity : BaseActivity() {
         }
 
         btnCustomViews.setOnClickListener {
-            ActivityUtils.start(this, CustomViewMainActivity::class.java)
+            ActivityUtils.start(this, ViewMainActivity::class.java)
         }
 
         btnViewPager.setOnClickListener {

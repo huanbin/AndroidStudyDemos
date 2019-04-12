@@ -82,7 +82,7 @@
         <activity android:name=".activitys.network.NetworkMainActivity" />
         <activity android:name=".activitys.views.draganddrop.DragView1Activity" />
         <activity android:name=".activitys.viewpager.PageTransformActivity" />
-        <activity android:name=".activitys.views.CustomViewMainActivity" />
+        <activity android:name=".activitys.views.ViewMainActivity" />
         <activity android:name=".activitys.views.pie.PieActivity" />
         <activity android:name=".activitys.viewpager.ViewPagerMainActivity" />
         <activity android:name=".activitys.views.nestedscroll.NestedScrollActivity1" />

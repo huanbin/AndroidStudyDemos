@@ -9,14 +9,13 @@ import com.syxz.hbdroid.activitys.views.pie.PieActivity
 import com.syxz.hbdroid.activitys.views.scroller.Scroller1Activity
 import com.syxz.hbdroid.activitys.views.webview.WebViewLeakActivity
 import com.syxz.hbdroid.utils.ActivityUtils
-import kotlinx.android.synthetic.main.activity_custom_view_main.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_view_main.*
 
-class CustomViewMainActivity : AppCompatActivity() {
+class ViewMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_view_main)
+        setContentView(R.layout.activity_view_main)
 
         btnScroller1.setOnClickListener {
             ActivityUtils.start(this, Scroller1Activity::class.java)
