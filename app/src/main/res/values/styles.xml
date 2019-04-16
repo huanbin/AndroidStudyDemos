@@ -1,31 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!--禁止进入和退出activity动画-->
-        <item name="android:windowAnimationStyle">@null</item>
-    </style>
+        <!--<item name="android:windowAnimationStyle">@null</item>-->
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
 
-    <!--自定义BottomNavigationView样式-->
-    <style name="MyBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="itemIconTint">#0088ff</item>
-        <item name="itemTextColor">#00ffff</item>
-        <item name="labelVisibilityMode">labeled</item>
-        <item name="itemTextAppearanceActive">@style/MyBottomNavigationViewTextAppearanceActive</item>
-        <item name="itemTextAppearanceInactive">@style/MyBottomNavigationViewTextAppearanceInactive</item>
-    </style>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
 
-    <style name="MyBottomNavigationViewTextAppearanceActive">
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">12sp</item>
-    </style>
-
-    <style name="MyBottomNavigationViewTextAppearanceInactive">
-        <item name="android:textAllCaps">true</item>
-        <item name="android:textSize">12sp</item>
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform
+        </item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_image_transform
+        </item>
+        <!--transition 是否Overlap-->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
     </style>
 </resources>

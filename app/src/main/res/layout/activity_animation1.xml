@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="112dp"
-        android:padding="20dp"
-        android:src="@drawable/img1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_height="46dp"
+        android:background="@color/colorPrimaryDark"
+        app:title="activity过渡动画1" />
 
-    <Button
-        android:id="@+id/btnStartWithTransition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="使用动画启动Activity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/shareView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:transitionName="share_view"
+            android:background="@drawable/circle_drawable2" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:transitionName="share_image"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/img1" />
+
+
+        <Button
+            android:id="@+id/btnStartWithTransition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="60dp"
+            android:text="使用动画启动Activity" />
+    </FrameLayout>
+</LinearLayout>
