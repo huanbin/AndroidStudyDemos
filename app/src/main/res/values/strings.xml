@@ -7,4 +7,11 @@
     <string name="title_music">音乐</string>
     <string name="title_video">视频</string>
     <string name="title_activity_nav">NavActivity</string>
+    <string name="text_content">Android Lollipop
+
+欢迎使用 Android 5.0 Lollipop — 迄今为止功能最丰富并且最富雄心的 Android 版本！
+
+此版本为用户提供了丰富的新功能，并为开发者新增了数以千计的 API，它进一步扩展了 Android 的应用范围，从手机、平板电脑和可穿戴式设备，扩展到电视和汽车。
+
+如需详细了解新增的开发者 API，请参阅 Android 5.0 API 概览。或者访问 www.android.com，阅读更多关于 Android 5.0 面向消费者功能的内容。</string>
 </resources>

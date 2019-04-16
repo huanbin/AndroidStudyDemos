@@ -17,6 +17,16 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="@string/text_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
         <View
             android:id="@+id/shareView"
             android:layout_width="60dp"
@@ -24,18 +34,18 @@
             android:layout_gravity="center|left"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="100dp"
-            android:transitionName="share_view"
-            android:background="@drawable/circle_drawable2" />
+            android:background="@drawable/circle_drawable2"
+            android:transitionName="share_view" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:transitionName="share_image"
             android:layout_gravity="center|left"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/img1" />
+            android:layout_marginTop="20dp"
+            android:src="@drawable/img1"
+            android:transitionName="share_image" />
 
 
         <Button
