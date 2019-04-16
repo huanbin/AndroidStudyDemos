@@ -13,6 +13,9 @@ import com.syxz.hbdroid.R
 import com.syxz.hbdroid.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_animation1.*
 
+/**
+ * Activity转场动画
+ */
 class AnimationActivity1 : BaseActivity() {
 
     override fun initViews(intent: Intent) {

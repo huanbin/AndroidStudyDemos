@@ -58,15 +58,6 @@
         app:layout_constraintTop_toBottomOf="@+id/btnNetwork" />
 
     <Button
-        android:id="@+id/btnAnimation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="动画"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSetBadge" />
-
-    <Button
         android:id="@+id/btnClip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +65,7 @@
         android:layout_marginEnd="8dp"
         android:text="Clicp属性作用演示"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAnimation" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSetBadge" />
 
     <Button
         android:id="@+id/btnClipChildren"
@@ -135,6 +126,16 @@
         android:text="apk文件处理相关"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCustomViews" />
+
+    <Button
+        android:id="@+id/btnAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="动画"
+        app:layout_constraintStart_toStartOf="@+id/btnApk"
+        app:layout_constraintTop_toBottomOf="@+id/btnApk" />
 
 
 </android.support.constraint.ConstraintLayout>

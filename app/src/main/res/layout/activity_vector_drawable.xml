@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/my_vector_drawable" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/animated_vector_drawable" />
+
+    <TextView
+        android:id="@+id/tvReveal"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="Reveal View动画"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvTestAniamtion"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="测试动画"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btShowMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示消息" />
+
+    <Button
+        android:id="@+id/btMove1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="translation动画1" />
+
+    <Button
+        android:id="@+id/btMove2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="translation动画2" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_purple" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_red_light" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_orange_dark" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_blue_dark" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_green_dark" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/darker_gray" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_blue_bright" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:color/holo_green_light" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btFling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fling动画" />
+</LinearLayout>

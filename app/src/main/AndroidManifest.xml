@@ -94,7 +94,9 @@
         <activity android:name=".activitys.views.webview.WebViewLeakActivity" />
         <activity android:name=".activitys.apk.ApkMainActivity" />
         <activity android:name=".activitys.image.compress.CompressImageActivity" />
-        <activity android:name=".activitys.views.CutomShadowActivity"></activity>
+        <activity android:name=".activitys.views.CutomShadowActivity" />
+        <activity android:name=".activitys.animation.VectorDrawableActivity" />
+        <activity android:name=".activitys.animation.AnimationMainActivity"></activity>
     </application>
 
 </manifest>

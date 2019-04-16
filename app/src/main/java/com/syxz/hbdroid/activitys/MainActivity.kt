@@ -4,6 +4,7 @@ import android.content.Intent
 import com.syxz.hbdroid.R
 import com.syxz.hbdroid.activitys.activitystack.TwoActivity
 import com.syxz.hbdroid.activitys.animation.AnimationActivity1
+import com.syxz.hbdroid.activitys.animation.AnimationMainActivity
 import com.syxz.hbdroid.activitys.apk.ApkMainActivity
 import com.syxz.hbdroid.activitys.backgroundtask.JobScheduleActivity
 import com.syxz.hbdroid.activitys.image.ImageMainActivity
@@ -43,10 +44,6 @@ class MainActivity : BaseActivity() {
             ActivityUtils.start(this, JobScheduleActivity::class.java)
         }
 
-        btnAnimation.setOnClickListener {
-            ActivityUtils.start(this, AnimationActivity1::class.java)
-        }
-
         btnClip.setOnClickListener {
             ActivityUtils.start(this, RecyclerViewClipActivity::class.java)
         }
@@ -71,6 +68,10 @@ class MainActivity : BaseActivity() {
 
         btnApk.setOnClickListener {
             ActivityUtils.start(this, ApkMainActivity::class.java)
+        }
+
+        btnAnimation.setOnClickListener {
+            ActivityUtils.start(this, AnimationMainActivity::class.java)
         }
     }
 }
