@@ -5,8 +5,10 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.graphics.Path
 import android.graphics.drawable.AnimatedVectorDrawable
+import android.graphics.drawable.TransitionDrawable
 import android.os.Build
 import android.os.Bundle
+import android.support.v4.content.res.ResourcesCompat
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.ViewAnimationUtils
@@ -26,6 +28,20 @@ class VectorDrawableActivity : AppCompatActivity() {
         vector()
         reveal()
         move()
+        transitionDrawable()
+    }
+
+    private fun transitionDrawable() {
+        var a = false
+        var transition=ivTransitionDrawable.drawable as TransitionDrawable
+        btTransitionDrawable.setOnClickListener {
+            a = !a
+            if (a) {
+                transition.startTransition(1000)
+            } else {
+                transition.reverseTransition(1000)
+            }
+        }
     }
 
     /**

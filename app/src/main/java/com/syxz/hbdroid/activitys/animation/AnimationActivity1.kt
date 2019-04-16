@@ -14,7 +14,7 @@ import com.syxz.hbdroid.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_animation1.*
 
 /**
- * Activity转场动画
+ * Activity过渡动画
  */
 class AnimationActivity1 : BaseActivity() {
 
@@ -22,23 +22,11 @@ class AnimationActivity1 : BaseActivity() {
         enableTransition()
         setContentView(R.layout.activity_animation1)
         btnStartWithTransition.setOnClickListener {
-            startActivity(Intent(this, AnimationActivity2::class.java),
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
-        }
-
-
-        var transition = ResourcesCompat.getDrawable(resources, R.drawable.transition_drawable, null) as TransitionDrawable
-        imageView3.setImageDrawable(transition)
-        var a = false
-        btnTransitionDrawable.setOnClickListener {
-            a = !a
-            if (a) {
-                transition.startTransition(1000)
-            } else {
-                transition.reverseTransition(1000)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                startActivity(Intent(this, AnimationActivity2::class.java),
+                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             }
         }
-
     }
 
     fun enableTransition() {
